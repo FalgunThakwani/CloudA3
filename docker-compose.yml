@@ -1,0 +1,21 @@
+services:
+  container1:
+    image: falgun56/container1:1.1
+    container_name: container1
+    ports: 
+      - 6000:8080
+    volumes:
+      - .:/usr/src/data:ro
+    networks:
+      - connect
+  container2:
+    image: falgun56/container2:1.1
+    container_name: container2
+    volumes:
+      - .:/usr/src/data:ro
+    networks:
+      - connect
+networks:
+  connect:
+    name: connect
+    driver: bridge
