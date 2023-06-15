@@ -1,0 +1,16 @@
+{
+  "name": "container1",
+  "version": "1.0.0",
+  "description": "container 1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "test"
+  },
+  "author": "Falgun Jairaj Thakwani",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  }
+}
