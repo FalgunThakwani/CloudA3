@@ -1,7 +1,7 @@
 steps:
-  - name: 'gcr.io/cloud-builders/dockerimages'
+  - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/csci5409-389802/container-1', './container-1/']
-  - name: 'gcr.io/cloud-builders/dockerimages'
+  - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/csci5409-389802/container-2', './container-2/']
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/gcr.io/csci5409-389802/container-1']
