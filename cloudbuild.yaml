@@ -8,6 +8,6 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/csci5409-389802/container-2']
   - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['run', 'deploy', 'container-1', '--image', 'gcr.io/csci5409-389802/container-1', '--region', 'us-central1']
+    args: ['deploy', 'container-1', '--image', 'gcr.io/csci5409-389802/container-1', '--region', 'us-central1']
   - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['run', 'deploy', 'container-2', '--image', 'gcr.io/csci5409-389802/container-2', '--region', 'us-central1']
+    args: ['deploy', 'container-2', '--image', 'gcr.io/csci5409-389802/container-2', '--region', 'us-central1']
